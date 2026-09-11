@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Store</title>
+    <link rel="stylesheet" href="../../../style.css">
+</head>
+
+<body>
+    <header>
+        <h1>🍔 Food Store</h1>
+
+        <nav>
+            <a href="./home.html">Inicio</a>
+            <a href="../cart/cart.html">
+                Carrito (<span id="cantidad-carrito">0</span>)
+            </a>
+            <button id="logoutButton" type="button">Cerrar sesión</button>
+        </nav>
+    </header>
+    <div class="catalog-layout">
+        <aside>
+            <h2>Categorías</h2>
+
+            <ul id="lista-categorias">
+                <!-- Las categorías se renderizarán desde home.ts -->
+            </ul>
+        </aside>
+
+        <main>
+            <form id="form-busqueda">
+                <label for="input-busqueda">Buscar productos</label>
+
+                <input type="search" id="input-busqueda" placeholder="Buscar productos..." autocomplete="off">
+
+                <button type="submit">Buscar</button>
+            </form>
+            <p id="mensaje-carrito" role="status"></p>
+            <section>
+                <h2>Productos</h2>
+
+                <p id="mensaje-productos"></p>
+
+                <section id="contenedor-productos">
+                    <!-- Los productos se renderizarán desde home.ts -->
+                </section>
+            </section>
+        </main>
+    </div>
+    <footer>
+        <p>&copy; 2026 Food Store. Todos los derechos reservados.</p>
+        <p>Contacto: <a href="#">info@foodstore.com</a></p>
+    </footer>
+
+    <!-- Protección de rutas -->
+    <script type="module" src="../../../main.ts"></script>
+
+    <!-- Lógica del catálogo de Food Store -->
+    <script type="module" src="./home.ts"></script>
+</body>
+
+</html>

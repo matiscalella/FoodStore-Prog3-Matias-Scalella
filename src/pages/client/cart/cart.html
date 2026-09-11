@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito | Food Store</title>
+    <link rel="stylesheet" href="../../../style.css">
+</head>
+
+<body>
+    <header>
+        <h1>🍔 Food Store</h1>
+
+        <nav>
+            <a href="../home/home.html">Inicio</a>
+            <a href="./cart.html">Carrito</a>
+            <button id="logoutButton" type="button">Cerrar sesión</button>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Mi carrito</h2>
+
+        <p id="mensaje-carrito-vacio"></p>
+
+        <section id="contenedor-carrito">
+            <!-- Los productos del carrito se renderizan desde cart.ts -->
+        </section>
+
+        <section id="resumen-carrito">
+            <h2>
+                Total:
+                <span id="total-carrito">$ 0</span>
+            </h2>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Food Store. Todos los derechos reservados.</p>
+        <p>Contacto: <a href="#">info@foodstore.com</a></p>
+    </footer>
+
+    <!-- Protección de rutas -->
+    <script type="module" src="../../../main.ts"></script>
+
+    <!-- Lógica del carrito -->
+    <script type="module" src="./cart.ts"></script>
+</body>
+
+</html>
