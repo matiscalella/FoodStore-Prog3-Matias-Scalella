@@ -5,7 +5,7 @@ Proyecto desarrollado para la **Evaluación 1 de Programación III** de la Tecni
 La aplicación representa una tienda de comidas en la que un usuario puede registrarse, iniciar sesión, consultar un catálogo, buscar y filtrar productos, agregarlos a un carrito y visualizar el total de su compra.
 
 ## Enlace Video
-[Explicacion del codigo](XXXXXXXXXXXXXXXXXX)
+[Explicacion del codigo - Ver en 1080p60 HD](https://youtu.be/wnKlzq51uNE)
 
 ## Tecnologías utilizadas
 
